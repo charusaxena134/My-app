@@ -43,16 +43,18 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
-            <Route exact path="/about">
-              <About mode={mode} />
-            </Route>
-            <Route exact path="/">
-              <TextForm
-                showAlert={showAlert}
-                heading="Try TextUtils - word counter, character counter, remove extra spaces"
-                mode={mode}
-              />
-            </Route>
+            <Route exact path="/about" element={<About mode={mode} />}></Route>
+            <Route
+              exact
+              path="/"
+              element={
+                <TextForm
+                  showAlert={showAlert}
+                  heading="Try TextUtils - word counter, character counter, remove extra spaces"
+                  mode={mode}
+                />
+              }
+            ></Route>{" "}
           </Routes>
         </div>
       </Router>

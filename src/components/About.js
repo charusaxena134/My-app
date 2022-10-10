@@ -24,7 +24,7 @@ export default function About(props) {
             <button
               className="accordion-button"
               type="button"
-              style={myStyle}
+              style={{ color: props.mode === "dark" ? "white" : "#042743" }}
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
               aria-expanded="true"
